@@ -118,6 +118,17 @@ define Device/avm_fritz3370-rev2-micron
 endef
 TARGET_DEVICES += avm_fritz3370-rev2-micron
 
+define Device/avm_fritz3490
+  $(Device/AVM)
+  $(Device/NAND)
+  DEVICE_MODEL := FRITZ!Box 3490
+  SOC := vr9
+  KERNEL_SIZE := 4096k
+  IMAGE_SIZE := 49152k
+  DEVICE_PACKAGES := kmod-usb3 fritz-tffs wasp_uploader
+endef
+TARGET_DEVICES += avm_fritz3490
+
 define Device/avm_fritz7360sl
   $(Device/AVM)
   DEVICE_MODEL := FRITZ!Box 7360 SL
