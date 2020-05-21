@@ -152,7 +152,7 @@ if [ ! -e "${WASP}/ath_tgt_fw1.fw" ]; then
   exit 1
 fi
 
-if [ ! -e "${WASP}/openwrt-ath79-generic-avm_frit${MODEL}_wasp-initramfs-kernel.bin" ]; then
+if [ ! -e "${WASP}/openwrt-ath79-generic-avm_fritz${MODEL}_wasp-initramfs-kernel.bin" ]; then
   echo "${WASP}/openwrt-ath79-generic-avm_fritz${MODEL}_wasp-initramfs-kernel.bin not found. Please download it from the OpenWrt website and place it in ${WASP}"
   exit 1                                                                                                                            
 fi   
